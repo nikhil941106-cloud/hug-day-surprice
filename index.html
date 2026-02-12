@@ -12,11 +12,23 @@
   <p>Enter Our Special Date</p>
 
   <input type="password" id="pass" placeholder="DDMMYYYY">
-  <button onclick="checkPass()">Unlock My Heart</button>
+  <button onclick="checkPassword()">Unlock My Heart</button>
 
   <p class="hint">Hint: Mainpuri → Odisha</p>
 </div>
 
-<script src="script.js"></script>
+<script>
+function checkPassword() {
+  var password = document.getElementById("pass").value;
+  
+  if (password === "11112010") {
+    alert("Correct! 💕");
+    window.location.href = "home.html";
+  } else {
+    alert("Wrong Password ❤️");
+  }
+}
+</script>
+
 </body>
 </html>
